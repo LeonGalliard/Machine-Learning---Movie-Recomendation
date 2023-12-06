@@ -6,7 +6,7 @@ movies_list = pd.read_csv("movies.csv")
 movies_list_title = movies_list["title"].values
 
 # Specify the correct path to similarity.pkl
-#similarity = pickle.load(open("movies.pkl", "rb"))
+similarity = pickle.load(open("movies.pkl", "rb"))
 
 
 def recommend(movie):
