@@ -6,10 +6,7 @@ movies_list = pd.read_csv("movies.csv")
 movies_list_title = movies_list["title"].values
 
 # Specify the correct path to similarity.pkl
-#similarity = pickle.load(open('movies.pkl', "rb"))
-similarity = 'movies.pkl'
-pickle.load(open(similarity,'rb'))
-
+similarity = pickle.load(open('movies.pkl', "rb"))
 
 def recommend(movie):
     movie_index = movies_list[movies_list["title"] == movie].index[0]
