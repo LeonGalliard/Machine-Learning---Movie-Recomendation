@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd  # Import Pandas for reading CSV
 import pickle
 
-movies_list = pd.read_csv("Dataset/movies.csv")
+movies_list = pd.read_csv("movies.csv")
 movies_list_title = movies_list["title"].values
 
 # Specify the correct path to similarity.pkl
-similarity = pickle.load(open("Dataset/similarity.pkl", "rb"))
+similarity = pickle.load(open("similarity.pkl", "rb"))
 
 
 def recommend(movie):
