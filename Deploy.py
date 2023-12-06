@@ -7,6 +7,8 @@ movies_list_title = movies_list["title"].values
 
 # Specify the correct path to similarity.pkl
 #similarity = pickle.load(open('movies.pkl', "rb"))
+similarity = 'movies.pkl'
+pickle.load(open(similarity,'rb'))
 
 
 def recommend(movie):
